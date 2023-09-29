@@ -1,0 +1,58 @@
+.history
+    &__subtitle
+        span
+            font-family: $deff
+            font-size: 20px
+            font-weight: 500
+
+            background: $accent-gradient
+            background-clip: text
+            -webkit-background-clip: text
+            -webkit-text-fill-color: transparent
+    &__btn
+        padding: 12px 16px
+    &__titleа 
+        margin-top: 24px
+        margin-bottom: 32px
+        h3
+            color: $text
+            font-family: $deff
+            font-size: 44px
+            font-weight: 700
+    &__info
+        p
+            color: $text
+            font-family: $deff
+            font-size: 16px
+            font-weight: 400
+    &-gallery
+        width: 100%
+        position: relative
+        display: grid
+        grid-template-columns: 1fr 1fr 1fr
+        gap: 12px
+        &__col
+            display: grid
+            grid-template-rows: 1fr 1fr 1fr
+            gap-column: 12px
+            img
+                cursor: pointer
+                transition: all .3s ease
+                &:hover
+                    transform: scale(1.1)
+        &__col--first
+            align-items: flex-end
+            justify-items: flex-end
+            img:first-child
+                margin-bottom: -27px
+
+        &__col--second
+            align-items: center
+            justify-items: center
+        &__col--third
+            justify-content: flex-start
+            align-items: flex-start
+            img
+                margin-top: 1
+                grid-row-start: 2
+                grid-row-end: 3
