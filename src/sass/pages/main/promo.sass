@@ -1,4 +1,38 @@
 .promo
   background: $bg
-  padding: 157px 0 32px
   border-radius: 40px
+
+  &-slider
+    .prev,
+    .next
+      background: $white
+
+  &__title
+    margin-bottom: 12px
+    h1
+      font-weight: 600
+      font-size: 64px
+      line-height: 80px
+      color: $text
+
+  &__description
+    margin-bottom: 24px
+    p
+      font-weight: 400
+      font-size: 24px
+      line-height: 32px
+      color: $text
+
+  &__img
+    position: absolute
+    top: 0
+    right: 0
+
+    img
+      border-radius: 40px
+
+  .swiper
+
+    &-slide
+      position: relative
+      padding: 157px 0 245px

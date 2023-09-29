@@ -146,6 +146,24 @@ const multiSelect = () => {
   });
 };
 
+new Swiper('.promo-slider', {
+  loop: true,
+
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+    type: 'bullets',
+  },
+
+  navigation: {
+    nextEl: '.next',
+    prevEl: '.prev',
+    enabled: true,
+  },
+
+  // autoplay: true,
+});
+
 $(document).ready(function () {
   multiSelect();
 });
