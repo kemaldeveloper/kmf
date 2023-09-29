@@ -7,7 +7,7 @@
 
   font-weight: 600
   font-size: 16px
-  color: #fff
+  color: $white
 
   border-radius: 16px
 
@@ -25,3 +25,28 @@
 
   &.disabled
     opacity: .4
+
+.btn-transparent
+  display: flex
+  justify-content: center
+  align-items: center
+
+  position: relative
+
+  color: $purple
+  font-family: $deff
+  font-size: 16px
+  font-weight: 600
+
+  min-width: 240px
+  height: 80px
+  padding: 12px 16px
+  border-radius: 32px
+
+  background-color: transparent
+  border: 1px solid $purple
+
+  transition: all .3s ease
+  &:hover
+    background: $hover
+    color: $white
