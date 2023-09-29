@@ -1,3 +1,40 @@
 .footer
-	padding: 16px 0
-	background: #eee
+	padding: 32px 0px 23px 0px
+	background: #C6D9DD
+	.footer-logo__wrapper
+		img:first-child
+			margin-right: 27px
+	&-network
+		margin-top: 42px
+		display: flex
+		justify-content: flex-start
+		align-items: flex-start
+		.icon
+			fill: $purple
+			width: 20px
+			height: 20px
+			&:not(:last-child)
+				margin-right: 8px
+	&-nav
+		width: 100%
+		display: grid
+		grid-template-columns: 1fr 1fr 1fr 1fr
+		gap: 39px
+		.footer-list
+			&__title
+				color: $text
+				font-family: $inter
+				font-size: 16px
+				font-weight: 700
+			a
+				color: $text
+				font-family: $inter
+				font-size: 14px
+				font-weight: 400
+				&:hover
+					color: $purple
+	.copyright
+		color: $text
+		font-family: $inter
+		font-size: 14px
+		font-weight: 400
