@@ -1,0 +1,59 @@
+.language-select
+
+  .choices
+
+  .choices__inner
+    font-family: $deff
+    background: #F6EEE8
+    border: none
+    border-radius: 12px
+    color: #32334C
+    font-weight: 400
+    font-size: 14px
+    min-height: 32px
+    padding: 4px 32px 5px 11px
+    position: relative
+    z-index: 5
+
+  .choices__list--dropdown, .choices__list[aria-expanded]
+    top: calc( 100% - 10px )
+
+  .choices__list--single
+    padding: 0
+
+  .choices[data-type*=select-one]::after
+    content: ''
+    background-image: url('../assets/images/icons/select-arrow.svg')
+    background-repeat: no-repeat
+    background-size: contain
+    width: 12px
+    height: 8px
+    border: none
+    transition: all 0.3s ease
+    z-index: 10
+
+  .choices[data-type*=select-one].is-open::after
+    border: none
+    margin-top: -2.5px
+    transform: rotate(180deg)
+
+  .is-selected.choices__item--selectable
+    display: none
+
+  .choices__list--dropdown .choices__item--selectable.is-highlighted, .choices__list[aria-expanded] .choices__item--selectable.is-highlighted
+    background: #F6EEE8
+
+  .choices__list--dropdown .choices__item, .language-select .choices__list[aria-expanded] .choices__item
+    background: #F6EEE8
+    color: #32334C
+    font-family: Gilroy
+    font-size: 14px
+    font-style: normal
+    font-weight: 400
+    line-height: normal
+    padding: 10px 10px 10px 12px
+
+  .choices__list--dropdown, .choices__list[aria-expanded]
+    background: #F6EEE8
+    border: none
+    border-radius: 0 0 12px 12px

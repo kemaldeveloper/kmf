@@ -1,22 +1,30 @@
 .header
-  padding: 16px 0
-  background: #eee
+  padding: 24px 0 24px
 
-.box1
-  font-family: "Gilroy", sans-serif
-  font-weight: 400
-.box2
-  font-family: "Gilroy", sans-serif
-  font-weight: 500
-.box3
-  font-family: "Gilroy", sans-serif
-  font-weight: 600
-.box4
-  font-family: "Gilroy", sans-serif
-  font-weight: 700
-.box5
-  font-family: "Inter", sans-serif
-  font-weight: 400
-.box6
-  font-family: "Inter", sans-serif
-  font-weight: 700
+  &__content
+    display: flex
+    justify-content: space-between
+
+  &__box
+    display: flex
+    align-items: center
+
+    .logo
+      width: 50px
+      height: 52px
+
+  &__box:nth-child(1)
+    column-gap: 24px
+
+  &__box:nth-child(2)
+    column-gap: 20px
+
+  &__logo
+    display: flex
+    justify-content: center
+    align-items: center
+    width: 126px
+    height: 40px
+
+  &__btn
+    padding: 8px 16px

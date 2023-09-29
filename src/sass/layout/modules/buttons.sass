@@ -1,22 +1,25 @@
 .btn
+  display: flex
+  justify-content: center
+  align-items: center
+
   position: relative
-  display: inline-block
-  font-size: 14px
-  border-radius: 4px
+
+  font-weight: 600
+  font-size: 16px
   color: #fff
-  text-align: center
-  text-decoration: none
-  padding: 10px 30px
+
+  border-radius: 16px
+
   border: none
   outline: none
-  transition: all .3s ease
+  text-decoration: none
   user-select: none
-  &:focus:not(.disabled),
-  &:hover:not(.disabled)
-    outline: none
-    cursor: pointer
-    color: #fff
-    text-decoration: none
+
+  transition: all .3s ease
+  background: $purple
+  &:hover
+    background: $hover
 
   &:active:not(.disabled)
 

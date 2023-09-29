@@ -28,10 +28,6 @@ const MQ = {
 
 MQ.updateState();
 
-$(document).ready(function () {
-  //
-});
-
 $(window).on('load', function () {
   //
 });
@@ -51,7 +47,7 @@ $('.js-popup').on('click', function (event) {
 });
 
 // Mobile menu toggle
-$('.js-menu').on('click',function () {
+$('.js-menu').on('click', function () {
   $(this).toggleClass('is-active');
   $('.menu').toggleClass('is-opened');
 });
@@ -63,7 +59,7 @@ $('input[type="tel"]').inputmask({
 });
 
 // E-mail Ajax Send
-$('form').on('submit',function (e) {
+$('form').on('submit', function (e) {
   e.preventDefault();
 
   let form = $(this);
@@ -137,3 +133,19 @@ const mfpPopup = function (popupID, source) {
     // }
   });
 };
+
+const multiSelect = () => {
+  const selects = document.querySelectorAll('.js-choice');
+
+  selects.forEach((item) => {
+    new Choices(item, {
+      searchEnabled: false,
+      itemSelectText: '',
+      allowHTML: false,
+    });
+  });
+};
+
+$(document).ready(function () {
+  multiSelect();
+});

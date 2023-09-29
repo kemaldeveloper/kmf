@@ -1,0 +1,88 @@
+.menu
+
+  &__list
+    display: flex
+    column-gap: 20px
+
+  &__item
+    position: relative
+    &:hover
+
+      &::after
+        display: block
+
+      & > a
+        color: $purple
+
+      .sub-menu
+        opacity: 1
+        visibility: visible
+
+  &__item > a
+    font-weight: 600
+    font-size: 16px
+    color: $text
+
+  &__item:first-child
+    &::after
+      content: ''
+      position: absolute
+      top: 100%
+      left: 0
+      height: 30px
+      width: 100%
+      display: none
+
+.sub-menu
+  position: absolute
+  top: calc( 100% + 22px )
+  left: -14px
+  width: 327px
+  opacity: 0
+  visibility: hidden
+  transition: all 0.3s linear
+  box-shadow: 0px 4px 24px 0px rgba(29, 47, 91, 0.14)
+  background: $white
+  padding: 19px 32px 7px
+  border-radius: 24px
+
+  & li:first-child
+    margin-bottom: 8px
+
+  & li:not(:first-child)
+    margin-bottom: 16px
+
+  & li:hover
+
+    a
+      color: $purple
+
+    .icon
+      fill: $purple
+
+  & li > span
+    color: $black
+    font-weight: 400
+    font-size: 12px
+    line-height: 150%
+
+  & li a
+    font-weight: 600
+    font-size: 16px
+    line-height: 140%
+    color: $label-dark
+    display: flex
+    align-items: center
+    column-gap: 10px
+
+    span
+      font-weight: inherit
+      font-size: inherit
+      line-height: inherit
+      color: inherit
+
+    .icon
+      width: 7px
+      height: 12px
+      fill: $label-dark
+      flex-shrink: 0
