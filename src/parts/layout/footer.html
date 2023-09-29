@@ -1,51 +1,106 @@
-  
-  <!-- Footer-->
-  <footer class="footer">
-    <div class="container">
-      <div class="row">
-        <div class="col">Footer</div>
-      </div>
-    </div>
-  </footer>
-
-  <!-- Request popup -->
-  <div class="mfp mfp--request-popup zoom-anim-dialog mfp-hide" id="request">
-    <div class="mfp__title">Оставьте заявку</div>
-    <div class="mfp__desc">менеджер свяжется с Вами в течение 3 часов</div>
-
-    <form class="mfp__form">
-      <div class="input-wrap">
-        <input type="text" name="name" data-name="Имя" placeholder="Имя" />
-      </div>
-      <div class="input-wrap">
-        <input type="tel" name="phone" data-name="Телефон" placeholder="Телефон" required="required" />
-      </div>
-      <div class="input-wrap">
-        <input type="email" name="email" data-name="Почта" placeholder="Почта" />
-      </div>
-      <button class="btn">Send</button>
-
-      <div class="form-result">
-        <div class="mess">
-          <div class="mess__title">Success!</div>
-          <div class="mess__desc">We will contact with you soon</div>
+<!-- Footer-->
+<footer class="footer">
+  <div class="container">
+    <div class="row">
+      <div class="col-3">
+        <div class="footer-logo__wrapper">
+          <img src="assets/images/icons/logo-3.svg" alt="logo-3">
+          <img src="assets/images/icons/logo-2.svg" alt="logo-2">
+        </div>
+        <div class="footer-network">
+          <svg class="icon icon--facebook">
+            <use xlink:href="assets/svg-sprite.svg#facebook"></use>
+          </svg>
+          <svg class="icon icon--telegram">
+            <use xlink:href="assets/svg-sprite.svg#telegram"></use>
+          </svg>
+          <svg class="icon icon--instagram">
+            <use xlink:href="assets/svg-sprite.svg#instagram"></use>
+          </svg>
         </div>
       </div>
-    </form>
-  </div>
+      <div class="col-9">
+        <div class="footer-nav">
+          <ul class="footer-list">
+            <span class="footer-list__title">О портале</span>
+            <li><a href="#">Продукты КМФ</a></li>
+            <li><a href="#">Новости / Анонсы</a></li>
+            <li><a href="#">О программе KMF Isker Hanymy</a></li>
+            <li><a href="#">Истории успеха</a></li>
+          </ul>
+          <ul class="footer-list">
+            <span class="footer-list__title">Обучение</span>
+            <li><a href="#">Наставничество</a></li>
+            <li><a href="#">Саморазвитие</a></li>
+            <li><a href="#">Здоровье</a></li>
+            <li><a href="#">Полезные советы</a></li>
+          </ul>
 
-  <!-- Success popup-->
-  <div class="mfp mfp--succes-popup zoom-anim-dialog mfp-hide" id="success">
-    <div class="form-result form-result--success">
+          <ul class="footer-list">
+            <span class="footer-list__title">Контакты</span>
+            <li><a href="#">г. Алматы,
+                пр. Назарбаева, 50</a></li>
+            <li><a href="#">+7 (701) 204-58-04</a></li>
+            <li><a href="#">iskerhanymy@kmf.kz</a></li>
+          </ul>
+          <ul class="footer-list">
+            <span class="footer-list__title">Бизнес</span>
+            <li><a href="#">Каталог</a></li>
+            <li><a href="#">Made in KZ</a></li>
+            <li><a href="#">Я социальный предприниматель</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-12">
+        <div class="copyright">
+          <span>©KMF 2023</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Request popup -->
+<div class="mfp mfp--request-popup zoom-anim-dialog mfp-hide" id="request">
+  <div class="mfp__title">Оставьте заявку</div>
+  <div class="mfp__desc">менеджер свяжется с Вами в течение 3 часов</div>
+
+  <form class="mfp__form">
+    <div class="input-wrap">
+      <input type="text" name="name" data-name="Имя" placeholder="Имя" />
+    </div>
+    <div class="input-wrap">
+      <input type="tel" name="phone" data-name="Телефон" placeholder="Телефон" required="required" />
+    </div>
+    <div class="input-wrap">
+      <input type="email" name="email" data-name="Почта" placeholder="Почта" />
+    </div>
+    <button class="btn">Send</button>
+
+    <div class="form-result">
       <div class="mess">
         <div class="mess__title">Success!</div>
         <div class="mess__desc">We will contact with you soon</div>
       </div>
     </div>
-  </div>
+  </form>
+</div>
 
-  <!-- Scripts -->
-  <script src="js/libs.min.js"></script>
-  <script src="js/main.min.js"></script>
+<!-- Success popup-->
+<div class="mfp mfp--succes-popup zoom-anim-dialog mfp-hide" id="success">
+  <div class="form-result form-result--success">
+    <div class="mess">
+      <div class="mess__title">Success!</div>
+      <div class="mess__desc">We will contact with you soon</div>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
 </body>
+
 </html>
